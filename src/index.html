@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM – Gestionar de Contacte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>Mini CRM</h1>
+            <p class="subtitle">Gestionar de Contacte de Afaceri</p>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Adauga Contact Nou</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <input type="text" id="name" placeholder="Nume complet *" required>
+                        <input type="email" id="email" placeholder="Email *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" id="phone" placeholder="Telefon">
+                        <input type="text" id="company" placeholder="Companie">
+                    </div>
+                    <button type="submit" class="btn-primary">Adauga Contact</button>
+                </form>
+            </section>
+
+            <section class="search-section">
+                <input type="text" id="searchInput" placeholder="Cauta dupa nume, email sau companie...">
+                <span id="contactCount">0 contacte</span>
+            </section>
+
+            <section class="contacts-section">
+                <div id="contactList" class="contact-grid">
+                    <!-- Contactele sunt afisate dinamic -->
+                </div>
+                <p id="emptyMessage" class="empty-msg">Nu exista contacte. Adaugati primul contact!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mini CRM – Laboratorul 4 Git</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+# .gitignore pentru proiect web Mini CRM
+
+# Dependente Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / dist
+dist/
+build/
+out/
+
+# Fisiere de configurare IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Fisiere sistem OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Fisiere de log
+*.log
+logs/
+
+# Variabile de mediu
+.env
+.env.local
+.env.development
+.env.production
+
+# Fisiere temporare
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Coverage
+coverage/
+.nyc_output/
